@@ -20,14 +20,14 @@ app.get("/notes", (req, res) => {
 })
 
 // HTML route to retrieve index
-app.get("*", (req, res) => {
+app.get("/*", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/index.html"))
 })
 
 // API route to read the database as JSON
 app.get("/api/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "/db/db.json"));
-});
+    res.sendFile(path.join(__dirname, "/db/db.json"))
+})
 
 // API route to POST new note to database db.json file
 app.post("/api/notes", (req, res) => {
@@ -43,6 +43,7 @@ app.post("/api/notes", (req, res) => {
     fs.writeFileSync("./db/db.json", JSON.stringify(noteList));
     res.json(noteList);
 })
+
 
 // API route to DELETE a note by ID
 app.delete("/api/notes/:id", (req, res) => {
