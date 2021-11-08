@@ -20,7 +20,7 @@ Functions include;
 
 ### **Result**
 
-![Express Note Taker](https://github.com/MA-FS/Team_Profile_Generator/blob/main/expressNotes.png?raw=true)
+![Express Note Taker](https://github.com/MA-FS/Express.js_Note_Taker/blob/main/expressNotes.png?raw=true)
 
 ### **GitHub Information**
 
